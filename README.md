@@ -1,3 +1,3 @@
-Ruby-WS2014
+Ruby-WS2015
 ===========
-Dateien für den Ruby-Programmierkurs im Wintersemester 2014/15
+Dateien für den Ruby-Programmierkurs im Wintersemester 2015/16
