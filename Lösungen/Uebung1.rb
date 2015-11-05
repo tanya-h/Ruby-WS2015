@@ -19,7 +19,7 @@ puts befehlsgenerator 'Good input. Very good input.'
 puts befehlsgenerator 'An intentionally bad input'
 
 
-#b) in der Übung abfehörte Variante
+#b) in der Übung abgehörte Variante
 def befehlsgenerator2(str)
   if str[-1] == "."
     str[-1] = "!"
