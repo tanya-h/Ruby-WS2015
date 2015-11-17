@@ -24,7 +24,7 @@ class Document
   end
 
 
-#Aufgabe1
+#Aufgabe2
   def context (token, before, after)
     tokens=content.split(/[ \n;:\"'`.,?!]/).to_a
     index=tokens.index(token)
