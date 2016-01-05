@@ -3,7 +3,7 @@
 
 #Aufgabe1
 #ich bin einen Schritt weiter gegangen
-#und lese aus einer Datei
+#und lese aus einer Dateu
 class Document
 
   attr_reader :content
@@ -28,10 +28,16 @@ class Document
   def context (token, before, after)
     tokens=content.split(/[ \n;:\"'`.,?!]/).to_a
     index=tokens.index(token)
+    #wenn nicht gefunden - nil!!!!
     tokens.values_at(index-before..index+after)
   end
 end
 
+
+
+def isCapitalized(token)
+   /[[:upper:]]/.match(token[0]) != nil
+end
 
 
 doc = Document.new("text.txt")
@@ -39,3 +45,5 @@ p doc
 p doc.case("do")
 p doc.context("Unix", 4, 8)
 
+p isCapitalized("mom")
+p isCapitalized("Mom")

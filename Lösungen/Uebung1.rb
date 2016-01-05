@@ -19,7 +19,7 @@ puts befehlsgenerator 'Good input. Very good input.'
 puts befehlsgenerator 'An intentionally bad input'
 
 
-#b) in der Übung abgehörte Variante
+#b) in der Übung abfehörte Variante
 def befehlsgenerator2(str)
   if str[-1] == "."
     str[-1] = "!"
@@ -52,7 +52,7 @@ tokenisiere_string("Mama mia, hat geklappt!")
 def string_to_hash(str)
   split = str.split
   map = { }
-  split.each{|token| if map.include?(token)
+  split.each{|token| if map.include?(token)   #for longer blocks: instead of {} do.. ends
                        map[token]+=1
                      else
                         map.store(token,1)
